@@ -28,7 +28,3 @@ Read inputs from the environment
 
 
 Write logs to stdout/stderr
-
-
-
-
