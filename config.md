@@ -1,4 +1,4 @@
-Configuration
+Store configuration in environment
 
 note:
 Never have code that branches based on where it's running
