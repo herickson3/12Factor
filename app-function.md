@@ -8,10 +8,27 @@ assume that your app is started up and shut down for every request
 following the previous suggestions helps achieve this
 
 
+Bad
+```javascript
+var myState = files.read('state-file.json')
 
+function myApp(request) {
+  myState.update(newData)
+  
+  return response
+}
+```
+
+Good
 ```javascript
 function myApp(request) {
+  var myState = backingService.read()
+
   // process request
-  return correctResponse
+  // update state
+
+  backingService.write(myState)
+
+  return response
 }
 ```
