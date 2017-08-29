@@ -1,63 +1,76 @@
 What are the 12 Factors?
 
 
-Codebase | one app = one codebase
+Codebase 
+
+note: one app = one codebase
 
 
-Dependencies | explicitly declare and isolate
+Dependencies 
+
+note: 
+explicitly declare and isolate
 
 
-Config | store in the environment
+Config 
 
-note:
+note: 
+store in the environment
 config will change across deployments, but code will not
 
 
-Backing Services | treat as attached resources
+Backing Services 
 
 note:
+treat as attached resources
 makes no distinction between local and 3rd party services
 
 
-Build, release, run | strictly separate
+Build, Release, Run 
 
 note:
-build - include / bundle all dependencies & create executable
-
-release - add any relevant config / backing services
-
-run - start up a release
-
-Build + config = release
-
-releases are append only
-
-builds initiated by developers. runs happen automatically by platform
+strictly separate
 
 
-Processes | stateless
+Processes 
+
+note: one or more stateless processes
 
 
-Port binding | exported services
+Port Binding 
 
 note:
-completely self contained
+exported services, completely self contained
 
 
-Concurrency | scale horizontally
-
-
-Disposability | fast startup & graceful shutdown
+Concurrency 
 
 note:
+scale horizontally
+
+
+Disposability 
+
+note:
+fast startup & graceful shutdown
 stopped or started at a moments notice
 
 
-Dev/prod parity | as similar as possible
+Dev/Prod Parity 
+
+note:
+as similar as possible
 
 
-Logs | stream stdout / stderr
+Logs
+
+note:
+stream logs to stdout/stderr
 
 
-Admin processes | one-off tasks
+Admin Processes 
+
+note:
+one-off tasks
+migrations
 
