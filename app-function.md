@@ -1,4 +1,4 @@
-Think of your app as a function
+Think of your app as a pure function
 
 note:
 any state only exists under the context of a single request
@@ -9,12 +9,9 @@ following the previous suggestions helps achieve this
 
 
 
-```go
-func myApp(request http.Request) http.Response {
-  var correctResponse http.Response
+```javascript
+function myApp(request) {
   // process request
   return correctResponse
 }
 ```
-
-
